@@ -1,2 +1,2 @@
-# proyecto-Talento-Tech
+# Proyecto-Talento-Tech
 pagina web 
