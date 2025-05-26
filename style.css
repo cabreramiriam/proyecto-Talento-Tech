@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: #0c0105;
+}
+
+header {
+  background: #54a0e7;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.carrito {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+}
+
+nav {
+  background: #b6d3ff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.producto {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #cccccc;
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.btn-comprar {
+  margin-top: 10px;
+  background: #54ace7;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-comprar:hover {
+  background: #4288c9;
+}
+
+.galeria {
+  padding: 40px 20px;
+  text-align: center;
+  background: #e1f1ff;
+}
+
+.carrusel {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.activo {
+  display: block;
+}
+
+.contacto {
+  padding: 10px 10px;
+  background: #fff;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 2px solid #54a0e7;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+form button {
+  background: #54a0e7;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #428cc9;
+}
+
+.ubicacion {
+    width:10%;
+    height:10px;
+}
+
+footer {
+  background: #54bde7;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.pagos {
+  text-align: center;
+  padding: 20px;
+  background: #fff0f0;
+}
+
+.botones-pago {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pago {
+  background: #54d1e7;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pago:hover {
+  background: #4288c9;
+}
+
+footer .redes {
+  margin-top: 10px;
+}
+
+footer .redes a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}

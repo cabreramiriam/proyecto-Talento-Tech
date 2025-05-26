@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vibes Make Up</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Vibes Make Up</h1>
+    <p>Descubre tu mejor versión</p>
+    <div class="carrito">🛒 Carrito: <span id="contador-carrito">0</span></div>
+
+    <!-- Inicio de sesión -->
+  <section class="login">
+    <input type="text" id="nombreUsuario" placeholder="Escribe tu nombre" />
+    <button onclick="iniciarSesion()">Iniciar sesión</button>
+  </section>
+  </header>
+
+  <nav>
+    <a href="#productos">Productos</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  
+
+  <section id="productos" class="productos">
+    <div class="producto">
+      <img src="./imagenes/polvodehadas.jpg" alt="polvo de hadas">
+      <h3>Polvo de hadas</h3>
+      <p>$1.200</p>
+      <button class="btn-comprar">Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="./imagenes/hebillas.jpg" alt="hebillas">
+      <h3>Hebillas</h3>
+      <p>$1.800</p>
+      <button class="btn-comprar">Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="./imagenes/rimel.jpg" alt="rimel">
+      <h3>Rimel</h3>
+      <p>$2.500</p>
+      <button class="btn-comprar">Agregar al carrito</button>
+    </div>
+  </section>
+
+  <section class="pagos">
+  <h2>Medios de Pago</h2>
+  <div class="botones-pago">
+    <button class="pago paypal">💳 Pagar con PayPal</button>
+    <button class="pago tarjeta">💳 Tarjeta de Crédito</button>
+    <button class="pago transferencia">🏦 Transferencia Bancaria</button>
+  </div>
+</section>
+
+  <section id="galeria" class="galeria">
+    <h2>Galería</h2>
+    <div class="carrusel">
+      <img class="slide action" src="./imagenes/balsamo.jpg" alt="balsamo">
+      <img class="slide" src="./imagenes/blush.jpg" alt="blush">
+      <img class="slide" src="./imagenes/brillo.jpg" alt="brillo">
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form action="https://formspree.io/f/tu-codigo" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo" required />
+      <textarea name="mensaje" rows="4" placeholder="Mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section  id="ubicacion" class="ubicacion>
+    <h2>Tu ubicación:</h2>
+    <p id="ubicacion"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104886.96316886129!2d-58.280795196817294!3d-34.76270599484154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f348c2fbdbf%3A0x80217bd276933f07!2sBerazategui%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1748224996638!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+  </section>
+
+
+  <footer>
+  <p>&copy; 2025 Vibes Make Up</p>
+  <div class="redes">
+    <a href="https://instagram.com" target="_blank">📸 Instagram</a>
+    <a href="https://facebook.com" target="_blank">📘 Facebook</a>
+    <a href="https://wa.me/1234567890" target="_blank">📱 WhatsApp</a>
+  </div>
+</footer>
+
+</body>
+</html>
